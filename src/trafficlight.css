@@ -1,0 +1,20 @@
+.redlight {
+height: 300px;
+width: 300px;
+background-color: red;
+border-radius: 50%;
+}
+
+.orangelight {
+height: 300px;
+width: 300px;
+background-color: orange;
+border-radius: 50%;
+}
+
+.greenlight {
+height: 300px;
+width: 300px;
+background-color: green;
+border-radius: 50%;
+}
