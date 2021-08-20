@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./trafficlight.css";
 
 const TrafficLight = ()=> {
-    return (<div className ="trafficlight">
-            <div className ="redlight"></div>
-            <div className = "orangelight"></div>
-            <div className = "greenlight"></div>
-            </div>)
+    const [color, setColor] = useState ("red");
+    
+    return (
+    <div>
+    <div className="stick"></div>
+    <div className ="trafficlight">
+            
+            <div onClick={()=>setColor("red")} className ={"redlight" + ((color === "red") ? " glow" : "")}></div>
+            <div onClick={()=>setColor("orange")} className = {"orangelight" + ((color === "orange") ? " glow" : "")}></div>
+            <div onClick={()=>setColor("green")} className = {"greenlight"+ ((color === "green") ? " glow" : "")}></div>
+            </div></div>)
 }
 
 
